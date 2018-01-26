@@ -1,0 +1,35 @@
+body{
+font-family: 'Montserrat', sans-serif;
+}
+.navbarstyle{
+  background-color: green !important;
+  text-align: center;
+}
+.img-size{
+  vertical-align: middle;
+  width: 3%;
+  float: right;
+}
+.img-size-button{
+  width: 10%;
+  float: left;
+}
+.align{
+  width: 42%;
+  margin-top: 10%;
+}
+.form-signin{
+  position: relative;
+  text-align: center;
+  width: 50%;
+  /*background-color: gainsboro;*/
+  margin: auto;
+  margin-top: 10%;
+}
+
+.container h2 {
+  text-align: center;
+}
+.checkbox{
+margin-top: 3% !important;
+}

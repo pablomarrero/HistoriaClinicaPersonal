@@ -61,12 +61,14 @@ textarea {
    Author's custom styles
    ==========================================================================*/
 
+/* styles */
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 .navbarstyle {
-  background-color: green;
+  background-color: #0c60a8;
   text-align: center;
 }
 
@@ -103,10 +105,40 @@ body {
   margin-top: 3% !important;
 }
 
+.icon-left{
+float: left;
+}
+
+.text-left{
+  margin-right: 75%;
+}
+
+.move{
+  margin-top: 5%;
+  text-align: center;
+}
+
+
+/* Input attribute */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+
+
+/* Medias Queries */
+
 @media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
   .btn btn-primary btn-block align {
     width: 10%;
+  }
+  .img-size-button {
+    width: 6%;
   }
 }
 
