@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
     // page is now ready, initialize the calendar...
-
+    
     
     $('#calendario').fullCalendar({    
+        themeSystem: 'bootstrap3',
         events: [
             {
                 title: 'Vacuna',
@@ -40,14 +41,35 @@ $(document).ready(function() {
                 click: function() {
                     alert('Apretaste Add');
                 }
+            },
+            BtnAgenda: {
+                text: 'agenda',
+                click: function() {
+                    window.location = "vista-calendario-agenda.html"
+                }
             }
         },
         header: {
-            left: 'month,agendaWeek,agendaDay,list,prevYear,title,nextYear',
-            center: '' ,
-            right: 'BtnBuscar, BtnAdd'
+            left: 'prevYear,title,nextYear',
+            center: 'month,agendaWeek,agendaDay,BtnAgenda' ,
+            right: 'BtnBuscar,BtnAdd'
         }
     })
+
+    $('#calendario .fc-left div').attr("class","fc-group-titulo");
+ 
+    $('#calendario .fc-group-titulo button span').remove();
+    $('#calendario .fc-group-titulo .fc-prevYear-button').append("<i class='fa fa-angle-double-left'></i>");
+    $('#calendario .fc-group-titulo .fc-nextYear-button').append("<i class='fa fa-angle-double-right'></i>");
+    
+   
+    $('#calendario .fc-BtnBuscar-button').text("");
+    $('#calendario .fc-BtnBuscar-button').append("<i class='fa fa-search'></i>");
+    
+    $('#calendario .fc-BtnAdd-button').text("");
+    $('#calendario .fc-BtnAdd-button').append("<i class='fa fa-plus'></i>");
+    $('#calendario .fc-header-toolbar').attr("class","menu-vista-calendario");
+   
 /*
 
     //mover month, week y day

@@ -17,7 +17,6 @@
   src: url("../fonts/roboto/Poppins-Light.ttf") format("opentype");
 }
 body {
-  font-family: "Poppins Light", sans-serif;
   color: #555555;
   background-color: #FFFFFF;
 }
@@ -49,7 +48,9 @@ body {
   width: 96%;
   text-align: center;
   margin: 0 auto 10px;
-  background-color: rgba(0, 0, 0, 0.125);
+  background-image: url(../img/rayonAzul.png);
+  background-position: center;
+  background-size: cover;
 }
 @media (min-width: 576px) {
   .menu-header {
@@ -123,55 +124,73 @@ body {
 .menu-home {
   margin-left: 13px;
 }
+.menu-home li {
+  background-position: center;
+  background-size: cover;
+}
 
-.menu-vista-calendario {
+#calendario .menu-vista-calendario {
+  margin: 0px auto 5px;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 4px;
   width: 96%;
-  text-align: center;
-  margin: -8px auto 0px;
-  background-color: rgba(0, 0, 0, 0.125);
 }
 @media (min-width: 576px) {
-  .menu-vista-calendario {
+  #calendario .menu-vista-calendario {
     width: 97%;
   }
 }
-.menu-vista-calendario a {
-  color: #495057;
+#calendario .menu-vista-calendario .fc-group-titulo {
+  margin: 3px auto;
 }
-.menu-vista-calendario .menu-hamburguesa {
-  margin: 7px 0 0;
+#calendario .menu-vista-calendario .fc-group-titulo h2 {
+  font-size: 18px;
+  display: inline;
+  margin: 0 0 0 12px;
 }
-
-#calendario {
-  border: 1px solid rgba(0, 0, 0, 0.125);
+#calendario .menu-vista-calendario .fc-group-titulo .fc-prevYear-button, #calendario .menu-vista-calendario .fc-group-titulo .fc-nextYear-button {
+  font-size: 14px;
+  width: 5%;
+  float: none;
+}
+#calendario .menu-vista-calendario .fc-left {
+  float: left;
+}
+#calendario .menu-vista-calendario .fc-right {
+  float: right;
+}
+#calendario .menu-vista-calendario .fc-center .btn-group {
+  font-size: 12px;
+  padding: 0;
+  margin: 0 20%;
+}
+@media (min-width: 576px) {
+  #calendario .menu-vista-calendario .fc-center .btn-group {
+    margin: 0 50%;
+  }
+}
+#calendario .menu-vista-calendario .fc-center .btn-group button {
+  margin: 6px auto;
+  padding: 2px 8px;
   border-radius: 4px;
-  width: 96%;
-  text-align: center;
-  margin: 2px auto 0px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
-@media (min-width: 576px) {
-  #calendario {
-    width: 97%;
-  }
-}
-#calendario .fc-header-toolbar h2 {
-  font-size: 14px;
-}
-#calendario .fc-header-toolbar button {
-  border: 1px solid sandybrown;
-  background: transparent !important;
-  box-shadow: none;
-  width: none;
-  font-size: 14px;
-}
-#calendario .fc-header-toolbar button:hover {
-  background: transparent !important;
-  box-shadow: none;
+#calendario .menu-vista-calendario button {
+  background-color: transparent !important;
 }
 #calendario .fc-view-container {
-  border: 2px solid yellow;
+  border: 1px solid #8fe2d9;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+@media (min-width: 576px) {
+  #calendario .fc-view-container {
+    width: 97%;
+  }
+}
+#calendario .fc-view-container th .fc-day-header, #calendario .fc-view-container th .fc-day-top, #calendario .fc-view-container td .fc-day-header, #calendario .fc-view-container td .fc-day-top {
+  font-size: 12px;
 }
 
 /*

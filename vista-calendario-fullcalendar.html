@@ -13,7 +13,9 @@
     <!-- css files -->
     <link rel="stylesheet" href="css/vendors/bootstrap4/dist/css/bootstrap.min.css"> <!-- Bootstrap-Core-CSS -->
     <link rel="stylesheet" href="css/font-awesome.css">
-	<link rel="stylesheet" href="js/vendors/fullcalendar/fullcalendar.min.css"></script>
+    <link rel="stylesheet" href="js/vendors/fullcalendar/fullcalendar.min.css"></script>
+    <link rel="stylesheet" href="js/vendors/fullcalendar/fullcalendar.print.min.css"  media='print'></script>
+
     <!-- //css files -->   
     <link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <!--<link href="scss/print.css" media="print" rel="stylesheet" type="text/css" />-->
@@ -46,32 +48,10 @@
                     </div>
                     <a class="nav-link menu-header-titulo col-7  col-md-8" href="login.html">Calendario</a>
                     <div class="col nav-link">
-                        <a class="menu-header-icono"  href="vista-calendario.html">   <i class="fa fa-calendar"></i></a>
+                        <a class="menu-header-icono"  href="vista-calendario-fullcalendar.html">   <i class="fa fa-calendar"></i></a>
                         <a class="menu-header-icono"  href="home.html"> <i class="fa fa-home"></i></a>
                     </div>
                 </nav>               
-
-                <nav class="row menu-vista-calendario ">                    
-                    <div class="col">
-                        <div class="dropdown menu-hamburguesa">
-                            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuCalendarLink" 
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-bars"></i>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">A</a>
-                                <a class="dropdown-item" href="#">B</a>
-                                <a class="dropdown-item" href="#">C</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a class=" menu-espacio col-7  col-md-8" href="login.html"></a>
-                    <div class="col nav-link">
-                        <a class="menu-header-icono"  href="vista-calendario.html">   <i class="fa fa-search"></i></a>
-                        <a class="menu-header-icono"  href="home.html"> <i class="fa fa-plus"></i></a>
-                    </div>
-                </nav>     
-
                 <div id='calendario'>
                 </div>
 

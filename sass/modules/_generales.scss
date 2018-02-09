@@ -1,6 +1,6 @@
 
 body{
-    font-family: $font-primario; 
+    //font-family: $font-primario; 
     color: $color-negro;
     background-color: $color-blanco;
     @media (min-width: 576px){
@@ -31,7 +31,10 @@ body{
     }
     text-align: center;
     margin: 0 auto 10px;
-    background-color: rgba(0,0,0,.125);
+
+    background-image: url(../img/rayonAzul.png);
+    background-position: center;
+    background-size: cover;
     
     a{
         color: #495057;
@@ -43,7 +46,6 @@ body{
         }
     }
     .menu-header-titulo{   
-        
     }
 }
 

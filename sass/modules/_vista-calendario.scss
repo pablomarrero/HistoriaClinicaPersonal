@@ -1,79 +1,71 @@
-.menu-vista-calendario{ 
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 4px;
-    width: 96%;
-    @media (min-width: 576px){
-        width: 97%;
-    }
-    text-align: center;
-    margin: -8px auto 0px;
-    background-color: rgba(0,0,0,.125);
-    
-    a{
-        color: #495057;
-    }
-
-    .menu-hamburguesa{
-        margin: 7px 0 0;
-    }
-    .menu-espacio{   
-    }
-    .menu-header-icono{
-    }
-}
-
 #calendario{ 
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 4px;
-    width: 96%;
-    @media (min-width: 576px){
-        width: 97%;
-    }
-    text-align: center;
-    margin: 2px auto 0px;
-
-    .fc-header-toolbar{
-        h2{
-            //background-color:  $color-primario;
-            font-size: 14px;
+    .menu-vista-calendario{ 
+        margin: 0px auto 5px;
+        border: 1px solid rgba(0,0,0,.125);
+        border-radius: 4px;
+        width: 96%;
+        @media (min-width: 576px){
+            width: 97%;
+        }    
+        .fc-group-titulo{    
+            margin: 3px auto;       
+            h2{
+                font-size: 18px;
+                display: inline;
+                margin: 0 0 0 12px;
+            }
+            .fc-prevYear-button, .fc-nextYear-button{               
+               font-size: 14px;
+               width: 5%;
+               float: none;
+            }
+        }
+        .fc-left{
+            float: left;
+        }
+        .fc-right{
+            float: right;
+        }
+        .fc-center{
+            .btn-group{                
+                font-size: 12px;
+                padding: 0;
+                margin: 0 20%;
+                @media (min-width: 576px){
+                    margin: 0 50%;
+                }
+                button{
+                    margin: 6px auto;
+                    padding: 2px 8px;                    
+                    border-radius: 4px;
+                    border:1px solid  rgba(0,0,0,.125);
+                }
+            }
         }
         button{
-            border: 1px solid sandybrown;
-            background: transparent !important;
-            box-shadow: none;
-            width: none;
-            font-size: 14px;
-            &:hover{                                
-                background: transparent !important;
-                box-shadow: none;
-            }
-            &.fc-prevYear-button{
-                
-            }
-            &.fc-nextYear-button{
-              
-            }
-            &.fc-BtnBuscar-button{
-                
-            }
-            &.fc-BtnAdd-button{
-                
-            }
-            &.fc-month-button{
-               
-            }
-            &.fc-agendaWeek-button{
-               
-            }
-            &.fc-agendaDay-button{
-                
-            }
+            background-color: transparent !important;
         }
+
+
     }
     .fc-view-container{
-        border: 2px solid yellow;
+        border:1px solid $color-primario;
+        width: 96%;        
+        margin: 0 auto;    
+        border-radius: 4px;       
+        @media (min-width: 576px){
+            width: 97%;
+        }   
+        th,td{         
+            .fc-day-header,.fc-day-top{
+                font-size: 12px;
+            }
+        }
     }
 
 }
 
-      
+
+
+
+  

@@ -1,7 +1,15 @@
 .menu-home{
     margin-left: 13px;
+
+    li{
+        background-position: center;
+        background-size: cover;
+    }
+    
     .menu-item{
+
         &.item-datos-estaticos{
+            
             span{
 
             }
