@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title></title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="row">
+    <!-- style="background-color: red;" -->
+    <div class="col d-none d-sm-block">
+    </div>
+    <div class="col-md-4 col">
+      <ul class="nav justify-content-center">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cogs alineado"></i></a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Ordenar Menú</a>
+            <a class="dropdown-item" href="#">Imprimir Carnet</a>
+            <a class="dropdown-item" href="/home/maxi/Proyecto_clinica/HistoriaClinicaPersonal/index.html">Cerrar Sesión</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="far fa-calendar-alt"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-home"></i></a>
+        </li>
+      </ul>
+
+
+      <div id="accordion">
+          <!-- <div class="card-header" id="headingOne"> -->
+          <h5 class="mb-0">
+        <button id="menu-one-collapse" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" data-on="<i class='fa fa-play'></i> aria-expanded="true" aria-controls="collapseOne">
+          Datos Niño
+          <i class="fas fa-arrow-down"></i>
+        </button>
+      </h5>
+          <!-- </div> -->
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Nombre 1</label>
+                <div class="col-10">
+                  <input class="form-control" type="text" placeholder="Ej: Franco" id="example-text-input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Nombre 2</label>
+                <div class="col-10">
+                  <input class="form-control" type="text" id="example-text-input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Apellido 1</label>
+                <div class="col-10">
+                  <input class="form-control" type="text" id="example-text-input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Apellido 2</label>
+                <div class="col-10">
+                  <input class="form-control" type="text" id="example-text-input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-date-input" class="col-2 col-form-label">Fec.Nac</label>
+                <div class="col-10">
+                  <input class="form-control" type="date" placeholder="2011-08-19" id="example-date-input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-text-input" class="col-2 col-form-label">Lug.Nac</label>
+                <div class="col-10">
+                  <input class="form-control" type="text" placeholder="Uruguay, Montevideo" id="example-text-input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-2 col-form-label"> D.N.I</label>
+                <div class="col-10">
+                  <input class="form-control" type="number" placeholder="X.XXX.XXX-X">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-2 col-form-label"> Domicilio</label>
+                <div class="col-10">
+                  <input class="form-control" type="text" placeholder="Bvar.España, 2567">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-2 col-form-label"> Telefono</label>
+                <div class="col-10">
+                  <input class="form-control" type="number">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-2 col-form-label">Servicio de salud</label>
+                <div class="col-10">
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-2 col-form-label">N° de identificación en el servicio</label>
+                <div class="col-10">
+                  <input class="form-control" type="number">
+                </div>
+              </div>
+            </div>
+          </div>
+          <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Datos Madre
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </h5>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label">Nombre 1</label>
+                          <div class="col-10">
+                            <input class="form-control" type="text" placeholder="Ej: María" id="example-text-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label">Nombre 2</label>
+                          <div class="col-10">
+                            <input class="form-control" type="text" id="example-text-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label">Apellido 1</label>
+                          <div class="col-10">
+                            <input class="form-control" type="text" id="example-text-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label">Apellido 2</label>
+                          <div class="col-10">
+                            <input class="form-control" type="text" id="example-text-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-date-input" class="col-2 col-form-label">Mail</label>
+                          <div class="col-10">
+                            <input class="form-control" type="email" placeholder="mariaperez@gmail.com" id="example-date-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-date-input" class="col-2 col-form-label">Fec.Nac</label>
+                          <div class="col-10">
+                            <input class="form-control" type="date" placeholder="2011-08-19" id="example-date-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="example-text-input" class="col-2 col-form-label">Lug.Nac</label>
+                          <div class="col-10">
+                            <input class="form-control" type="text" placeholder="Uruguay, Montevideo" id="example-text-input">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-2 col-form-label"> D.N.I</label>
+                          <div class="col-10">
+                            <input class="form-control" type="number" placeholder="X.XXX.XXX-X">
+                          </div>
+                        </div>
+            </div>
+          </div>
+          <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Datos Padre
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </h5>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Nombre 1</label>
+                            <div class="col-10">
+                              <input class="form-control" type="text" placeholder="Ej: Francisco" id="example-text-input">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Nombre 2</label>
+                            <div class="col-10">
+                              <input class="form-control" type="text" id="example-text-input">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Apellido 1</label>
+                            <div class="col-10">
+                              <input class="form-control" type="text" id="example-text-input">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Apellido 2</label>
+                            <div class="col-10">
+                              <input class="form-control" type="text" id="example-text-input">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="example-date-input" class="col-2 col-form-label">Mail</label>
+                            <div class="col-10">
+                              <input class="form-control" type="email" placeholder="franciscosoco@gmail.com" required="" id="example-date-input">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="example-date-input" class="col-2 col-form-label">Fec.Nac</label>
+                            <div class="col-10">
+                              <input class="form-control" type="date" placeholder="2011-08-19" id="example-date-input">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="example-text-input" class="col-2 col-form-label">Lug.Nac</label>
+                            <div class="col-10">
+                              <input class="form-control" type="text" placeholder="Uruguay, Montevideo" id="example-text-input">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label class="col-2 col-form-label"> D.N.I</label>
+                            <div class="col-10">
+                              <input class="form-control" type="number" placeholder="X.XXX.XXX-X">
+                            </div>
+                          </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col d-none d-sm-block">
+    </div>
+    <!-- <div class="row justify-content-md-center">
+    <div class="">
+    </div>
+    <div class="col-md-auto">
+      <div class="list-group col-12">
+        <a href="#" class="list-group-item list-group-item-action">Niño/Madre/Padre/Tutor</a>
+          <a href="#" class="list-group-item list-group-item-action">Parto y Embarazo</a>
+        <a href="#" class="list-group-item list-group-item-action">Controles de Salud</a>
+        <a href="#" class="list-group-item list-group-item-action">Gráficas</a>
+        <a href="#" class="list-group-item list-group-item-action">Enfermedades</a>
+        <a href="#" class="list-group-item list-group-item-action">Hospitalizaciones</a>
+        <a href="#" class="list-group-item list-group-item-action">Vacunas</a>
+        <a href="#" class="list-group-item list-group-item-action">Consejos y Desarrollos</a>
+        <a href="#" class="list-group-item list-group-item-action">Alergias</a>
+      </div>
+    </div>
+    <div class="">
+    </div>
+  </div> -->
+  </div>
+  <script src="js/javascript.js"></script>
+</body>
+
+</html>
