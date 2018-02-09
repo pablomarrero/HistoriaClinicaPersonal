@@ -1,0 +1,51 @@
+
+body{
+    font-family: $font-primario; 
+    color: $color-negro;
+    background-color: $color-blanco;
+    @media (min-width: 576px){
+        background-color: $color-md-fondo;
+    }
+}
+
+.col-fondo{
+    padding: 10px;
+    @media (min-width: 576px){
+        padding: 0px;
+    }
+    background-color: $color-blanco;
+
+    @media (min-width: 576px){
+        border: 4px solid $color-blanco;
+        border-radius: 1rem;
+    }
+    
+}
+
+.menu-header{ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    width: 96%;
+    @media (min-width: 576px){
+        width: 97%;
+    }
+    text-align: center;
+    margin: 0 auto 10px;
+    background-color: rgba(0,0,0,.125);
+    
+    a{
+        color: #495057;
+    }
+
+    .menu-header-icono{
+        i{
+
+        }
+    }
+    .menu-header-titulo{   
+        
+    }
+}
+
+
+      

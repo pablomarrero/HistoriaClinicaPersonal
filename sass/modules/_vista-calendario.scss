@@ -1,0 +1,79 @@
+.menu-vista-calendario{ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    width: 96%;
+    @media (min-width: 576px){
+        width: 97%;
+    }
+    text-align: center;
+    margin: -8px auto 0px;
+    background-color: rgba(0,0,0,.125);
+    
+    a{
+        color: #495057;
+    }
+
+    .menu-hamburguesa{
+        margin: 7px 0 0;
+    }
+    .menu-espacio{   
+    }
+    .menu-header-icono{
+    }
+}
+
+#calendario{ 
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    width: 96%;
+    @media (min-width: 576px){
+        width: 97%;
+    }
+    text-align: center;
+    margin: 2px auto 0px;
+
+    .fc-header-toolbar{
+        h2{
+            //background-color:  $color-primario;
+            font-size: 14px;
+        }
+        button{
+            border: 1px solid sandybrown;
+            background: transparent !important;
+            box-shadow: none;
+            width: none;
+            font-size: 14px;
+            &:hover{                                
+                background: transparent !important;
+                box-shadow: none;
+            }
+            &.fc-prevYear-button{
+                
+            }
+            &.fc-nextYear-button{
+              
+            }
+            &.fc-BtnBuscar-button{
+                
+            }
+            &.fc-BtnAdd-button{
+                
+            }
+            &.fc-month-button{
+               
+            }
+            &.fc-agendaWeek-button{
+               
+            }
+            &.fc-agendaDay-button{
+                
+            }
+        }
+    }
+    .fc-view-container{
+        border: 2px solid yellow;
+    }
+
+}
+
+      

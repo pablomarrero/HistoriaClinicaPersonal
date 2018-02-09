@@ -1,0 +1,66 @@
+.contenido{
+    padding: 15px 0 0;
+    button {
+        width: 100%;
+        margin: 0 auto 5px;
+        i{
+            text-align: center;
+            text-decoration: none;    
+            font-size: 14px;
+            margin: 5px 2px;
+        }
+        span{
+            margin-left: 5px;
+            font-size: 14px;
+            font-family: $font-primario; 
+        }
+    }
+    img{
+        margin-bottom: 15px;
+    }
+    .form-group{
+        margin: 0 auto 20px;
+        label{
+            font-size: 14px;
+            margin: 5px auto 0;
+        }
+        input{
+            margin: 2px auto 0;
+            font-size: 14px;
+            color: #555555;
+            background-color: #f7f7f7;
+            border: 1px solid #e6e6e6;
+            border-radius: .3rem;
+            padding: 6px 2px;
+        }
+        &:last-child{
+            text-align: center;
+        }
+    }
+    .btn-ingresar{
+        margin: 0px 0 0;
+        color: 000000;
+        background-color: $color-primario;
+    }
+    .login-ingresar-con{
+        font-size: 12px;
+        line-height: 1.5;
+        display: block;
+        padding: 6px;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+    .login-forgot-pwd{
+        font-size: 12px;
+        color: $color-azul;
+        
+        text-align: center;
+        line-height: 1.5;
+    }
+
+  
+  
+  
+} 
+
+
