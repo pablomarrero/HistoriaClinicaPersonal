@@ -61,6 +61,19 @@ body {
   color: #495057;
 }
 
+.text-center {
+  height: 170px;
+  width: 180px;
+  border: 1px solid red;
+  padding: 10px 15px 15px 15px;
+}
+
+.redondo {
+  background-color: blue;
+  height: 150px;
+  border-radius: 100px;
+}
+
 .contenido {
   padding: 15px 0 0;
 }

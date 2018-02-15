@@ -1,6 +1,6 @@
 
 body{
-    //font-family: $font-primario; 
+    //font-family: $font-primario;
     color: $color-negro;
     background-color: $color-blanco;
     @media (min-width: 576px){
@@ -19,10 +19,10 @@ body{
         border: 4px solid $color-blanco;
         border-radius: 1rem;
     }
-    
+
 }
 
-.menu-header{ 
+.menu-header{
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 4px;
     width: 96%;
@@ -35,7 +35,7 @@ body{
     background-image: url(../img/rayonAzul.png);
     background-position: center;
     background-size: cover;
-    
+
     a{
         color: #495057;
     }
@@ -45,9 +45,22 @@ body{
 
         }
     }
-    .menu-header-titulo{   
+    .menu-header-titulo{
     }
 }
 
-
-      
+.text-center {
+  // height: auto;
+  // background-image: url(../img/rayonVerde4.png);
+  // background-position: center;
+  // background-size: cover;
+  height: 170px;
+  width: 180px;
+  border: 1px solid red;
+  padding: 10px 15px 15px 15px;
+}
+.redondo{
+  background-color: blue;
+  height: 150px;
+  border-radius: 100px;
+}
