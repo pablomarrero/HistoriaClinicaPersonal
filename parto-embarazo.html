@@ -49,56 +49,179 @@
           </div>
         </nav>
           <div class="card">
+						<div id="accordion">
+		          <div class="card">
+		            <div class="card-header" id="headingOne">
+		              <h5 class="mb-0">
+		                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+		                        data-on="<i class='fa fa-play'></i>" aria-expanded="true" aria-controls="collapseOne">
+		                    Embarazo   <i class="fa fa-play"></i>
+		                </button>
+		              </h5>
+		            </div>
+
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+		              <div class="card-body">
+										<div class="form-row">
 						<form>
 						  <div class="form-row">
 						    <div class="col-6">
 									 <label for="inputEmail3">N° embarazo</label>
-						      <input type="text" class="form-control">
+						      <input type="number" class="form-control">
 						    </div>
 						    <div class="col-6">
 										<label for="inputEmail3">N° controles parentales</label>
-						      <input type="text" class="form-control">
+						      <input type="number" class="form-control">
 						    </div>
-						    <div class="col-12">
-								<center><label for="inputEmail3">Embarazo</label></center>
-									<div class="col-12">
-										<center>
+						    <div class="col-6">
+									<label for="inputEmail3">Embarazo</label>
+									<div class="col-6">
 									<div class="custom-control custom-radio custom-control-inline">
   									<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-  									<label class="custom-control-label" for="customRadioInline1"> único</label>
+  									<label class="custom-control-label" for="customRadioInline1"> Único</label>
 									</div>
 									<div class="custom-control custom-radio custom-control-inline">
 									  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-									  <label class="custom-control-label" for="customRadioInline2"> múltiple</label>
+									  <label class="custom-control-label" for="customRadioInline2"> Múltiple</label>
 									</div>
-									</center>
-								</div>
+									</div>
 						    </div>
-								<div class="col-3">
-								 <label for="inputEmail3">Email</label>
-								 <input type="text" class="form-control" placeholder="Zip">
-							 </div>
-							 <div class="col-3">
-								 <label for="inputEmail3">Email</label>
-								 <input type="text" class="form-control" placeholder="Zip">
-							 </div>
-							 <div class="col-3">
-								 <label for="inputEmail3">Email</label>
-								 <input type="text" class="form-control" placeholder="Zip">
-							 </div>
-							 <div class="col-3">
-								 <label for="inputEmail3">Email</label>
-								 <input type="text" class="form-control" placeholder="Zip">
-							 </div>
-							 <div class="col-3">
-								 <label for="inputEmail3">Email</label>
-								 <input type="text" class="form-control" placeholder="Zip">
-							 </div>
+							<div class="col-6">
+								<center><label for="inputEmail3">VDRL</label></center>
+								<div class="row">
+								  <div class="col-6">
+								    <div class="input-group">
+								      <label>+</label>
+								      <input type="number" class="form-control" aria-label="Text input with checkbox">
+								    </div>
+								  </div>
+								  <div class="col-6">
+								    <div class="input-group">
+								      <label>-</label>
+								      <input type="number" class="form-control" aria-label="Text input with radio button">
+								    </div>
+								  </div>
+								</div>
 						  </div>
-
+							<div class="col-6">
+									<label for="inputEmail3">Tratamiento</label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
 						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h5 class="mb-0">
+					<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"
+									data-on="<i class='fa fa-play'></i>" aria-expanded="true" aria-controls="collapseTwo">
+							Recién Nacido   <i class="fa fa-play"></i>
+					</button>
+				</h5>
+			</div>
+
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+				<div class="card-body">
+					<div class="form-row">
+	<form>
+		<div class="form-row">
+			<div class="col-3">
+				 <label for="inputEmail3">Peso (gr)</label>
+				<input type="number" class="form-control">
+			</div>
+			<div class="col-3">
+					<label for="inputEmail3">Talla (cm)</label>
+				<input type="number" class="form-control">
+			</div>
+			<div class="col-6">
+				<label for="inputEmail3">Perímetro cefálico (cm)</label>
+				<input type="number" class="form-control">
+			</div>
+		<div class="col-6">
+			<label for="inputEmail3">Edad gestacional (semanas)</label>
+			<input type="number" class="form-control">
+		</div>
+	</div>
+
+	</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+	<div class="card-header" id="headingThree">
+		<h5 class="mb-0">
+			<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree"
+							data-on="<i class='fa fa-play'></i>" aria-expanded="true" aria-controls="collapseThree">
+					Alimentación al alta   <i class="fa fa-play"></i>
+			</button>
+		</h5>
+	</div>
+
+	<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+		<div class="card-body">
+			<div class="form-row">
+<form>
+<div class="form-row">
+	<div class="col-6">
+		 <label for="inputEmail3">N° embarazo</label>
+		<input type="number" class="form-control">
+	</div>
+	<div class="col-6">
+			<label for="inputEmail3">N° controles parentales</label>
+		<input type="number" class="form-control">
+	</div>
+	<div class="col-6">
+		<label for="inputEmail3">Embarazo</label>
+		<div class="col-6">
+		<div class="custom-control custom-radio custom-control-inline">
+			<input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+			<label class="custom-control-label" for="customRadioInline1"> Único</label>
+		</div>
+		<div class="custom-control custom-radio custom-control-inline">
+			<input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+			<label class="custom-control-label" for="customRadioInline2"> Múltiple</label>
+		</div>
+		</div>
+	</div>
+<div class="col-6">
+	<center><label for="inputEmail3">VDRL</label></center>
+	<div class="row">
+		<div class="col-6">
+			<div class="input-group">
+				<label>+</label>
+				<input type="number" class="form-control" aria-label="Text input with checkbox">
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="input-group">
+				<label>-</label>
+				<input type="number" class="form-control" aria-label="Text input with radio button">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-6">
+		<label for="inputEmail3">Tratamiento</label>
+	<input type="number" class="form-control">
+</div>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+
+	</div>
           </div>
           <div class="card">
+
           </div>
           <div class="card">
           </div>

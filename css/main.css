@@ -62,15 +62,16 @@ body {
 }
 
 .text-center {
-  height: 170px;
-  width: 180px;
+  height: 160px;
+  width: 170px;
   border: 1px solid red;
   padding: 10px 15px 15px 15px;
 }
 
-.redondo {
-  background-color: blue;
-  height: 150px;
+.circle {
+  background-image: url(../img/abril-adu.jpg);
+  background-position: center;
+  height: 140px;
   border-radius: 100px;
 }
 
