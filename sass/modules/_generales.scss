@@ -1,0 +1,67 @@
+
+body{
+    //font-family: $font-primario;
+    color: $color-negro;
+    background-color: $color-blanco;
+    @media (min-width: 576px){
+        background-color: $color-md-fondo;
+    }
+}
+
+.col-fondo{
+    padding: 10px;
+    @media (min-width: 576px){
+        padding: 0px;
+    }
+    background-color: $color-blanco;
+
+    @media (min-width: 576px){
+        border: 4px solid $color-blanco;
+        border-radius: 1rem;
+    }
+
+}
+
+.menu-header{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    width: 96%;
+    @media (min-width: 576px){
+        width: 97%;
+    }
+    text-align: center;
+    margin: 0 auto 10px;
+
+    background-image: url(../img/rayonAzul.png);
+    background-position: center;
+    background-size: cover;
+
+    a{
+        color: #495057;
+    }
+
+    .menu-header-icono{
+        i{
+
+        }
+    }
+    .menu-header-titulo{
+    }
+}
+
+.text-center {
+  // height: auto;
+  // background-image: url(../img/rayonVerde4.png);
+  // background-position: center;
+  // background-size: cover;
+  height: 160px;
+  width: 170px;
+  border: 1px solid red;
+  padding: 10px 15px 15px 15px;
+}
+.circle{
+  background-image: url(../img/abril-adu.jpg);
+  background-position: center;
+  height: 140px;
+  border-radius: 100px;
+}

@@ -1,207 +1,213 @@
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
+@font-face {
+  font-family: "Roboto Regular";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("opentype");
 }
-
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto/Poppins-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto/Poppins-Light.ttf") format("opentype");
+}
 body {
-    font-size: 1em;
-    line-height: 1.4;
+  color: #555555;
+  background-color: #FFFFFF;
+}
+@media (min-width: 576px) {
+  body {
+    background-color: #f4f4f4;
+  }
 }
 
-a {
-    color: #00e;
+.col-fondo {
+  padding: 10px;
+  background-color: #FFFFFF;
+}
+@media (min-width: 576px) {
+  .col-fondo {
+    padding: 0px;
+  }
+}
+@media (min-width: 576px) {
+  .col-fondo {
+    border: 4px solid #FFFFFF;
+    border-radius: 1rem;
+  }
 }
 
-a:visited {
-    color: #551a8b;
+.menu-header {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  width: 96%;
+  text-align: center;
+  margin: 0 auto 10px;
+  background-image: url(../img/rayonAzul.png);
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .menu-header {
+    width: 97%;
+  }
+}
+.menu-header a {
+  color: #495057;
 }
 
-a:hover {
-    color: #06e;
+.text-center {
+  height: 160px;
+  width: 170px;
+  border: 1px solid red;
+  padding: 10px 15px 15px 15px;
+}
+
+.circle {
+  background-image: url(../img/abril-adu.jpg);
+  background-position: center;
+  height: 140px;
+  border-radius: 100px;
+}
+
+.contenido {
+  padding: 15px 0 0;
+}
+.contenido button {
+  width: 100%;
+  margin: 0 auto 5px;
+}
+.contenido button i {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px 2px;
+}
+.contenido button span {
+  margin-left: 5px;
+  font-size: 14px;
+  font-family: "Poppins Light", sans-serif;
+}
+.contenido img {
+  margin-bottom: 15px;
+}
+.contenido .form-group {
+  margin: 0 auto 20px;
+}
+.contenido .form-group label {
+  font-size: 14px;
+  margin: 5px auto 0;
+}
+.contenido .form-group input {
+  margin: 2px auto 0;
+  font-size: 14px;
+  color: #555555;
+  background-color: #f7f7f7;
+  border: 1px solid #e6e6e6;
+  border-radius: .3rem;
+  padding: 6px 2px;
+}
+.contenido .form-group:last-child {
+  text-align: center;
+}
+.contenido .btn-ingresar {
+  margin: 0px 0 0;
+  color: 000000;
+  background-color: #8fe2d9;
+}
+.contenido .login-ingresar-con {
+  font-size: 12px;
+  line-height: 1.5;
+  display: block;
+  padding: 6px;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+.contenido .login-forgot-pwd {
+  font-size: 12px;
+  color: #5BA9FF;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.menu-home {
+  margin-left: 13px;
+}
+.menu-home li {
+  background-position: center;
+  background-size: cover;
+}
+
+#calendario .menu-vista-calendario {
+  margin: 0px auto 5px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
+  width: 96%;
+}
+@media (min-width: 576px) {
+  #calendario .menu-vista-calendario {
+    width: 97%;
+  }
+}
+#calendario .menu-vista-calendario .fc-group-titulo {
+  margin: 3px auto;
+}
+#calendario .menu-vista-calendario .fc-group-titulo h2 {
+  font-size: 18px;
+  display: inline;
+  margin: 0 0 0 12px;
+}
+#calendario .menu-vista-calendario .fc-group-titulo .fc-prevYear-button, #calendario .menu-vista-calendario .fc-group-titulo .fc-nextYear-button {
+  font-size: 14px;
+  width: 5%;
+  float: none;
+}
+#calendario .menu-vista-calendario .fc-left {
+  float: left;
+}
+#calendario .menu-vista-calendario .fc-right {
+  float: right;
+}
+#calendario .menu-vista-calendario .fc-center .btn-group {
+  font-size: 12px;
+  padding: 0;
+  margin: 0 20%;
+}
+@media (min-width: 576px) {
+  #calendario .menu-vista-calendario .fc-center .btn-group {
+    margin: 0 50%;
+  }
+}
+#calendario .menu-vista-calendario .fc-center .btn-group button {
+  margin: 6px auto;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+#calendario .menu-vista-calendario button {
+  background-color: transparent !important;
+}
+#calendario .fc-view-container {
+  border: 1px solid #8fe2d9;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+@media (min-width: 576px) {
+  #calendario .fc-view-container {
+    width: 97%;
+  }
+}
+#calendario .fc-view-container th .fc-day-header, #calendario .fc-view-container th .fc-day-top, #calendario .fc-view-container td .fc-day-header, #calendario .fc-view-container td .fc-day-top {
+  font-size: 12px;
 }
 
 /*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/* Prevent callout */
-
-.nocallout {
-    -webkit-touch-callout: none;
-}
-
-.pressed {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* A hack for HTML5 contenteditable attribute on mobile */
-
-textarea[contenteditable] {
-    -webkit-appearance: none;
-}
-
-/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
-   they have been set as display: none */
-
-.gifhidden {
-    position: absolute;
-    left: -100%;
-}
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: 0;
-    direction: ltr;
-    display: block;
-    overflow: hidden;
-    text-align: left;
-    text-indent: -999em;
-}
-
-.ir br {
-    display: none;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/**
- * Clearfix helper
- * Used to contain floats: h5bp.com/q
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 800px) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for viewports that meet the condition */
-}
+@import 'modules/ie';
+@import 'modules/print';
+@import 'modules/screen';*/

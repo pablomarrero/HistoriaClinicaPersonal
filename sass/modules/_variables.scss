@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Roboto Regular";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../fonts/roboto/Roboto-Regular.ttf") format("opentype");
+}
+@font-face {
+	font-family: "Poppins Regular";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../fonts/roboto/Poppins-Regular.ttf") format("opentype");
+}
+@font-face {
+	font-family: "Poppins Light";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../fonts/roboto/Poppins-Light.ttf") format("opentype");
+}
+
+$font-primario: 'Poppins Light', sans-serif;
+$color-primario: #8fe2d9;
+$color-secundario:#4D726C;
+$color-blanco: #FFFFFF;
+$color-negro: #555555;
+$color-md-fondo: #f4f4f4;
+
+
+
+$color-amarillo : #FFC039;
+$color-azul : #5BA9FF;
+$color-violeta: #8549f2;
