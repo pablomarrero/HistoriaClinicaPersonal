@@ -30,21 +30,21 @@
       <div class="col col-md-4 col-fondo   justify-content-center ">
         <nav class="nav menu-header ">
           <div class="nav-link  col">
-            <div class="dropdown menu-header-icono">
-              <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-cogs"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Imprimir</a>
-                <a class="dropdown-item" href="#">Invitar otro usuario</a>
-                <a class="dropdown-item" href="#">Salir de HCP</a>
-              </div>
-            </div>
+						<div class="dropdown show menu-header-icono">
+							<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-cogs"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Imprimir</a>
+							<a class="dropdown-item" href="#">Invitar otro usuario</a>
+							<a class="dropdown-item" href="login.html">Salir de HCP</a>
+						</div>
+					</div>
           </div>
           <a class="nav-link menu-header-titulo col-7 col-md-8" href="login.html">HOME</a>
           <div class="col nav-link">
-            <a class="menu-header-icono"  href="vista-calendario.html">   <i class="fa fa-calendar"></i></a>
+            <a class="menu-header-icono"  href="vista-calendario-agenda.html">   <i class="fa fa-calendar"></i></a>
             <a class="menu-header-icono"  href="home.html"> <i class="fa fa-home"></i></a>
           </div>
         </nav>
@@ -63,23 +63,18 @@
               <div class="card-body">
 								<div class="form-row">
 										<div class="text-center rounded col-5">
-											<div class="circle">
+											<div class="circle rounded-circle">
+												<img class="image-child" src="img/abril-adu.jpg">
 											</div>
 										</div>
-										<form class="col-7">
-										<div class="form-group row">
-											<label for="inputEmail3">Nombre 1</label>
-											<input type="text" class="form-control col-10">
-										</div>
-										<div class="form-group row">
-											<label for="inputEmail3">Nombre 2</label>
-											<input type="text" class="form-control col-10">
-										</div>
-									</form>
-
-                  <form>
+										<form class="form-group col-7">
+													<label class="col-12" for="inputEmail3">Nombre 2</label>
+													<input type="form-control" class="form-control col-10">
+													<label class="col-12" for="inputEmail3">Nombre 1</label>
+													<input type="form-control" class="form-control col-10"></form>
+                  <form class="move-form">
                     <div class="form-group row">
-                      <label for="example-text-input" class="col-4 col-form-label h">Apellido 1</label>
+                      <label for="example-text-input" class="col-4 col-form-label">Apellido 1</label>
                       <div class="col-8">
                         <input class="form-control" type="text" id="example-text-input">
                       </div>
@@ -274,6 +269,9 @@
 
   <script src='js/vendors/jquery-2.1.4.min.js'></script>
   <script src='css/vendors/bootstrap4/dist/js/bootstrap.js'></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </div>
 </body>
 </html>
