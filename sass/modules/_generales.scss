@@ -1,5 +1,5 @@
 body {
-  //font-family: $font-primario;
+  font-family: $font-primario;
   color: $color-negro;
   background-color: $color-blanco;
   @media (min-width: 576px) {
@@ -45,24 +45,20 @@ body {
 
 .text-center {
   height: 120px;
-  border: 1px solid red;
-  padding: 5px 5px 5px 15px;
-  margin-top: 5%;
+  // border: 1px solid red;
+  padding: 2px 2px 2px 2px;
+  margin-top: 3%;
 
-  .circle {
+  .rounded-circle {
     background-position: center;
-    height: 100%;
-    margin-top: 5%;
+    height: 90%;
+    margin-top: 11%;
+    margin-left: 4%;
+    width: 90%;
   }
   @media (min-width: 768px) {
-    height: 100%;
-
-    .circle {
-      height: 100%;
-      width: 90%;
-      margin-left: 5%;
-      margin-top: 5%;
-    }
+    height: 150px;
+    margin-top: -1%;
   }
 }
 
@@ -71,11 +67,12 @@ body {
   width: 90%;
   height: 90%;
 }
-@media(min-width: 567px) {
+
   .move-form {
-    margin-top: 5%;
+    @media(min-width: 567px) {
+      margin-top: 2%;
+    }
   }
-}
 
 .icon-align {
   float: left;
@@ -87,4 +84,16 @@ body {
   margin-left: 3%;
   margin-top: 0.5%;
   color: #524846;
+}
+
+.nopadding {
+   padding: 0% !important;
+   margin: 0 !important;
+}
+
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(-90deg);
 }
