@@ -37,22 +37,39 @@
 						</a>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 							<a class="dropdown-item" href="#">Imprimir</a>
-							<a class="dropdown-item" href="#">Invitar otro usuario</a>
+							<a class="dropdown-item" href="#" data-toggle="modal" data-target=".bd-example-modal-sm">Invitar otro familiar</a>
 							<a class="dropdown-item" href="login.html">Salir de HCP</a>
 						</div>
 					</div>
           </div>
-          <a class="nav-link menu-header-titulo col-7 col-md-8" href="datos-familiares.html"> Niño, Madre / Padre / Tutor </a>
+					<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content">
+									<div class="dropdown show menu-header-icono">
+										<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Elegir Familiar
+									</a>
+									<div class="dropdown-menu modal-width" aria-labelledby="dropdownMenuLink">
+										<a class="dropdown-item" href="datos-familiares.html">Madre</a>
+										<a class="dropdown-item" href="datos-familiares.html" data-toggle="modal" data-target=".bd-example-modal-sm">Padre</a>
+										<a class="dropdown-item" href="datos-familiares.html">Tutor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+          <a class="nav-link menu-header-titulo col-7 col-md-8" href="datos-familiares.html"> Niño,Madre/Padre/Tutor </a>
           <div class="col nav-link">
             <a class="menu-header-icono"  href="vista-calendario-agenda.html">   <i class="fa fa-calendar"></i></a>
             <a class="menu-header-icono"  href="home.html"> <i class="fa fa-home"></i></a>
           </div>
         </nav>
-        <div id="accordion">
+        <div class="accordion-align" id="accordion">
           <div class="card">
-            <div class="card-header" id="headingOne">
+            <div class="card-header nopadding background-button" id="headingOne">
               <h5 class="mb-0">
-                <button class="btn btn-link nopadding" data-toggle="collapse" data-target="#collapseOne"
+                <button class="btn btn-link nopadding " data-toggle="collapse" data-target="#collapseOne"
                         data-on="<i class='fa fa-play'></i>" aria-expanded="true" aria-controls="collapseOne">
                     <i class="fa fa-chevron-down icon-align"></i><h6 class="title-collapse">Datos Niño</h6>
                 </button>
@@ -62,16 +79,15 @@
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
               <div class="card-body">
 								<div class="form-row">
-										<div class="text-center rounded col-5">
-											<div class="rounded-circle">
-												<img class="image-child" src="img/abril-adu.jpg">
-											</div>
+										<div class="text-center col-4">
+											<img class="image-child " src="img/abril-adu.jpg">
 										</div>
-										<form class="form-group col-7 move-form">
+										<form class="form-group col-8 move-form">
 											<label class="col-12" for="inputEmail3">Nombre 1</label>
-													<input type="form-control" class="form-control col-10">
+													<input type="form-control" class="form-control col-12">
 													<label class="col-12" for="inputEmail3">Nombre 2</label>
-													<input type="form-control" class="form-control col-10"></form>
+													<input type="form-control" class="form-control col-12">
+										</form>
                   <form class="move-form">
                     <div class="form-group row">
                       <label for="example-text-input" class="col-4 col-form-label">Apellido 1</label>
@@ -100,7 +116,7 @@
                     <div class="form-group row">
                       <label class="col-4 col-form-label"> D.N.I</label>
                       <div class="col-8">
-                        <input class="form-control" type="number" placeholder="X.XXX.XXX-X">
+                        <input class="form-control" type="text" placeholder="X.XXX.XXX-X">
                       </div>
                     </div>
                     <div class="form-group row">
@@ -112,7 +128,7 @@
                     <div class="form-group row">
                       <label class="col-4 col-form-label"> Telefono</label>
                       <div class="col-8">
-                        <input class="form-control" type="number">
+                        <input class="form-control" type="text">
                       </div>
                     </div>
                     <div class="form-group row">
@@ -122,9 +138,9 @@
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label class="col-4 col-form-label">N° de identificación en el servicio</label>
+                      <label class="col-4 col-form-label ">N° de identificación en el servicio</label>
                       <div class="col-8">
-                        <input class="form-control" type="number">
+                        <input class="form-control" type="text">
                       </div>
                     </div>
 
@@ -134,9 +150,9 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header nopadding background-button" id="headingTwo">
               <h5 class="mb-0">
-                  <button class="btn btn-link nopadding " data-toggle="collapse" data-target="#collapseTwo"
+                  <button class="btn btn-link nopadding" data-toggle="collapse" data-target="#collapseTwo"
                           data-on="<i class='fa fa-play'></i>" aria-expanded="true" aria-controls="collapseOne">
                       <i class="fa fa-chevron-down icon-align"></i><h6 class="title-collapse">Datos Madre</h6>
                   </button>
@@ -190,7 +206,7 @@
                       <div class="form-group row">
                         <label class="col-4 col-form-label"> D.N.I</label>
                         <div class="col-8">
-                          <input class="form-control" type="number" placeholder="X.XXX.XXX-X">
+                          <input class="form-control" type="text" placeholder="X.XXX.XXX-X">
                         </div>
                       </div>
                 </form>
@@ -198,7 +214,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingThree">
+            <div class="card-header nopadding background-button" id="headingThree">
               <h5 class="mb-0">
                   <button class="btn btn-link nopadding" data-toggle="collapse" data-target="#collapseThree"
                           data-on="<i class='fa fa-play'></i>" aria-expanded="true" aria-controls="collapseOne">
@@ -254,7 +270,7 @@
                   <div class="form-group row">
                     <label class="col-4 col-form-label"> D.N.I</label>
                     <div class="col-8">
-                      <input class="form-control" type="number" placeholder="X.XXX.XXX-X">
+                      <input class="form-control" type="rext" placeholder="X.XXX.XXX-X">
                     </div>
                  </div>
                 </form>
@@ -262,6 +278,12 @@
             </div>
           </div>
         </div>
+				<footer class="footer footer-design">
+					<ul>
+						<li class="pull-right btn button-design"><a href="home.html">Volver <i class="fa fa-undo"></i></a></li>
+						<li class="pull-right btn button-design"><a href="home.html">Guardar <i class="fa fa-save"></i></a></li>
+					</ul>
+				</footer>
       </div>
       <div class="col d-none d-sm-block" ></div>
     </div>
