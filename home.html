@@ -29,22 +29,40 @@
         <div class="col d-none d-sm-block " ></div>
         <div class="col col-md-4 ">
             <div class="row  col-fondo  justify-content-center">
-
                 <nav class="nav menu-header ">
-
                     <div class="nav-link  col">
                         <div class="dropdown menu-header-icono">
-                            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            <a class=" dropdown-toggle underline" href="#" role="button" id="dropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-cogs"></i>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Imprimir</a>
-                                <a class="dropdown-item" href="#">Invitar otro usuario</a>
-                                <a class="dropdown-item" href="login.html">Salir de HCP</a>
+                                <a class="dropdown-item underline" href="#">Imprimir</a>
+                                <a href="#Modal"class="dropdown-item underline" data-toggle="modal" data-target=".fade">Invitar otro usuario</a>
+                                <a class="dropdown-item underline" href="login.html">Salir de HCP</a>
                             </div>
                         </div>
                     </div>
+										<div class="modal fade bd-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										  <div class="modal-dialog modal-sm" role="document">
+										    <div class="modal-content">
+										      <div class="modal-header">
+										        <h5 class="modal-title col-11" id="exampleModalLabel">Invitar Familiar</h5>
+										        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										          <span aria-hidden="true">&times;</span>
+										        </button>
+										      </div>
+										      <div class="modal-body">
+															<a data-backdrop="false" class="dropdown-item underline hola" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Madre</a>
+															<a data-backdrop="false" class="dropdown-item underline" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Padre</a>
+															<a data-backdrop="false" class="dropdown-item underline" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Tutor</a>
+										      </div>
+										      <div class="modal-footer">
+										        <button type="button" class="btn btn-success"  data-dismiss="modal">Volver</button>
+										      </div>
+										    </div>
+										  </div>
+										</div>
                     <a class="nav-link menu-header-titulo col-7 col-md-8" href="login.html">HOME</a>
                     <div class="col nav-link">
                         <a class="menu-header-icono"  href="vista-calendario-fullcalendar.html">   <i class="fa fa-calendar"></i></a>
@@ -54,34 +72,34 @@
 
                 <ul class="menu-home col-12 list-group  " >
                     <li class="menu-item item-datos-estaticos list-group-item  list-group-item-action ">
-                            <a  href="datos-familiares.html"><span> Niño, Madre / Padre / Tutor </span></a>
+                            <a  href="datos-familiares.html" class="underline"><span> Niño, Madre / Padre / Tutor </span></a>
                     </li>
                     <li class="menu-item item-datos-estaticos list-group-item  list-group-item-action ">
-                            <a  href="parto-embarazo.html"><span>Parto y Embarazo </span></a>
+                            <a  href="parto-embarazo.html" class="underline"><span>Parto y Embarazo </span></a>
                     </li>
 
                     <li class="menu-item item-vista-calendario-por-eventos list-group-item  list-group-item-action ">
-                            <a  href="vista-calendario-fullcalendar.html"><span> Controles de Salud </span>
+                            <a  href="vista-calendario-fullcalendar.html" class="underline"><span> Controles de Salud </span>
                             <span class="badge badge-danger badge-pill">14</span></a>
                     </li>
                     <li class="menu-item item-graficas list-group-item">
-                        <a  href="datos-familiares.html"><span> Gráficas </span></a>
+                        <a  href="datos-familiares.html" class="underline"><span> Gráficas </span></a>
                     </li>
                     <li class="menu-item item-vista-calendario-por-eventos list-group-item  list-group-item-action ">
-                            <a  href="vista-calendario-fullcalendar.html"><span> Enfermedades </span></a>
+                            <a  href="vista-calendario-fullcalendar.html" class="underline"><span> Enfermedades </span></a>
                     </li>
                     <li class="menu-item item-vista-calendario-por-eventos list-group-item  list-group-item-action ">
-                            <a  href="vista-calendario-fullcalendar.html"><span> Hospitalizaciones </span></a>
+                            <a  href="vista-calendario-fullcalendar.html" class="underline"><span> Hospitalizaciones </span></a>
                     </li>
                     <li class="menu-item item-vista-calendario-por-eventos list-group-item  list-group-item-action ">
-                            <a  href="vista-calendario-fullcalendar.html"><span> Vacunas </span>
+                            <a  href="vista-calendario-fullcalendar.html" class="underline"><span> Vacunas </span>
                             <span class="badge badge-warning badge-pill">14</span></a>
                     </li>
                     <li class="menu-item item-consejos list-group-item  list-group-item-action ">
-                        <a  href="datos-familiares.html"><span>Consejos y Desarrollo</span></a>
+                        <a  href="datos-familiares.html" class="underline"><span>Consejos y Desarrollo</span></a>
                     </li>
                     <li class="menu-item item-alergias list-group-item  list-group-item-action ">
-                      	<a  href="datos-familiares.html"><span>Alergías</span></a>
+                      	<a  href="datos-familiares.html" class="underline"><span>Alergías</span></a>
                     </li>
                 </ul>
             </div>

@@ -117,3 +117,28 @@ h5 .nopadding .icon-align {
 .modal-width{
   width: 100%;
 }
+.underline:hover{
+  text-decoration: none;
+}
+.modal-content{
+  height: 250px !important;
+  background-color: white !important;
+}
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
